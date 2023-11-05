@@ -1,0 +1,190 @@
+/* Reset default styles for better Markdown representation */
+html{
+    position: absolute;
+    width: 60%;
+    left: 20%;
+
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    line-height: 1.8;
+}
+
+    /* Set a light background and text color */
+body {
+    background-color: #f5f5f5;
+    color: #333;
+    padding: 20px;
+}
+
+    /* Markdown-style navigation bar with elements on the right */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    color: #0366d6;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+}
+
+.nav-list li {
+    margin-right: 10px;
+}
+
+.nav-list a {
+    text-decoration: none;
+    color: #0366d6;
+}
+
+.nav-list a:hover {
+    text-decoration: underline;
+}
+/* Style headings like Markdown */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+body h1:not(nav h1) {
+  font-size: 28px;
+  margin: 30px 0;
+  padding: 10px 0;
+  border-bottom: 3px solid #e3e3e3;
+}
+
+nav h1 {
+    font-size: 28px;
+    margin: 0;
+}
+
+h2 {
+  font-size: 24px;
+  margin: 30px 0;
+}
+
+h3 {
+  font-size: 20px;
+  margin: 10px 0;
+}
+
+h4 {
+  font-size: 18px;
+}
+
+h5 {
+  font-size: 16px;
+}
+
+h6 {
+  font-size: 14px;
+}
+
+/* Markdown-style lists */
+ul, ol {
+  margin: 10px 0;
+  padding-left: 20px;
+}
+
+li {
+  margin: 10px 0;
+}
+
+/* Style links */
+a {
+  color: #0366d6;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+nav a {
+    padding: 30px;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Style code blocks */
+pre {
+  background-color: #f8f8f8;
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin: 10px 0;
+  overflow: auto;
+}
+
+code {
+  font-family: monospace;
+  color: #333;
+}
+
+/* Style blockquotes */
+blockquote {
+  border-left: 3px solid #ccc;
+  padding-left: 10px;
+  margin: 10px 0;
+}
+
+/* Style horizontal rules */
+hr {
+  border: 1px solid #ccc;
+  margin: 20px 0;
+}
+
+/* Style paragraphs */
+p {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 10px 0;
+}
+
+/* Style inline code */
+code {
+  background-color: #f8f8f8;
+  padding: 2px 4px;
+  border: 1px solid #ccc;
+  font-family: monospace;
+}
+
+/* Style images */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Style tables */
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+table, th, td {
+  border: 1px solid #ccc;
+}
+
+th, td {
+  padding: 8px;
+  text-align: left;
+}
+
+/* Remove default list styles */
+ul, ol {
+  list-style: none;
+}
+
+/* Add spacing between list items */
+li {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 10px 0;
+}
+
+.filled-circle-list {
+    list-style-type: disc; /* Use "disc" to create filled circle dots */
+    margin: 10px 0;
+}
