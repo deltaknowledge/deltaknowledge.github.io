@@ -3,14 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <title>Cheng-You Ho</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="global.css">
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha384-ez8JvJwWu1CLO2V5gZJef8uU1T6c9F/Z9bPTbMl7OwPPWJByJFv8i5oT5Qv9W2Sw" crossorigin="anonymous">
 </head>
 <body>
     <nav class="navbar">
         <h1>CYH</h1>
         <ul class="nav-list">
-            <li><a href="#">Home</a></li>
-            <li><a href="/resources">Resources</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="resources.html">Resources</a></li>
+            <li><a href="projects.html">Projects</a></li>
         </ul>
     </nav>
 
@@ -19,6 +22,71 @@
         I also pursue physics in my leisure time, by leading a 2024 Taiwan Young Physicists' Tournament team, doing science fairs in Physics and Astronomy, and working to be a part of
         the 2024 national IPhO team of Chinese Taipei. 
     </p>
+
+    <div class="container">
+
+        <!-- Full-width images with number text -->
+        <div class="mySlides">
+          <div class="numbertext">1 / 6</div>
+            <img src="mainpics/1.png" style="width:100%">
+        </div>
+      
+        <div class="mySlides">
+          <div class="numbertext">2 / 6</div>
+            <img src="mainpics/2.png" style="width:100%">
+        </div>
+      
+        <div class="mySlides">
+          <div class="numbertext">3 / 6</div>
+            <img src="mainpics/3.png" style="width:100%">
+        </div>
+      
+        <div class="mySlides">
+          <div class="numbertext">4 / 6</div>
+            <img src="mainpics/4.png" style="width:100%">
+        </div>
+      
+        <div class="mySlides">
+          <div class="numbertext">5 / 6</div>
+            <img src="mainpics/5.png" style="width:100%">
+        </div>
+      
+        <div class="mySlides">
+          <div class="numbertext">6 / 6</div>
+            <img src="mainpics/6.png" style="width:100%">
+        </div>
+      
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      
+        <!-- Image text -->
+        <div class="caption-container">
+          <p id="caption"></p>
+        </div>
+      
+        <!-- Thumbnail images -->
+        <div class="row">
+          <div class="column">
+            <img class="demo cursor" src="mainpics/1.png" style="width:100%" onclick="currentSlide(1)" alt="2023 Breakthrough Junior Challenge Award-Winning Video">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="mainpics/2.png" style="width:100%" onclick="currentSlide(2)" alt="2022 IJSO Silver Medal for Chinese Taipei">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="mainpics/3.png" style="width:100%" onclick="currentSlide(3)" alt="2023 Taiwan Young Physicists' Tournament">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="mainpics/4.png" style="width:100%" onclick="currentSlide(4)" alt="Music Album and Reading Summary Competition">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="mainpics/5.png" style="width:100%" onclick="currentSlide(5)" alt="CYSH Study Group and Presentation on TYPT Introduction">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="mainpics/6.png" style="width:100%" onclick="currentSlide(6)" alt="Subject Ability Competition Second Place and YouTube Channel">
+          </div>
+        </div>
+      </div>
 
     <h2>Achievements</h2>
     <ul class="filled-circle-list">
