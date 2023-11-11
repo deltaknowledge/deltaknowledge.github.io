@@ -191,26 +191,27 @@ li {
 
 /* Style Markdown-style table */
 table {
-    border-collapse: collapse;
-    width: 100%;
-    margin-top: 20px;
-  }
-  
-  table th, table td {
-    border: 1px solid #ddd;
-    padding: 8px;
-    text-align: left;
-  }
-  
-  table th {
-    background-color: #f8f8f8;
-  }
-  
-  table tbody tr:nth-child(even) {
-    background-color: #f9f9f9;
-  }
-  
-  table tbody tr:hover {
-    background-color: #f0f0f0;
-  }
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 20px;
+}
+
+table th, table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+table th {
+  background-color: #f8f8f8;
+  text-align: center; /* Center the text in th elements */
+}
+
+table tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+table tbody tr:hover {
+  background-color: #f0f0f0;
+}
   
