@@ -48,6 +48,7 @@
   transition: opacity 0.3s ease-in-out; /* Add a smooth transition effect */
 }
 
+
 /* Add a pointer when hovering over the thumbnail images */
 .cursor {
   cursor: pointer;
