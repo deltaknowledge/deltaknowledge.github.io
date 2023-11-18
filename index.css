@@ -37,6 +37,7 @@
 /* Position the image container (needed to position the left and right arrows) */
 .container {
   position: relative;
+  background: #b3b3b3;
   width: 80%;
   left: 10%;
   margin: 30px 0;

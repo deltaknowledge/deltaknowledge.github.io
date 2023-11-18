@@ -10,30 +10,29 @@ function currentSlide(n) {
   showSlides(slideIndex = n);
 }
 function showSlides(n) {
-  let i;
   let slides = document.getElementsByClassName("mySlides");
   let dots = document.getElementsByClassName("demo");
   let captionText = document.getElementById("caption");
+  
   if (n > slides.length) {slideIndex = 1}
   if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
+  
+  for (let i = 0; i < slides.length; i++) {
+    slides[i].style.opacity = 0; // Set initial opacity to 0 for all slides
     slides[i].style.display = "none";
   }
-  for (i = 0; i < dots.length; i++) {
+
+  for (let i = 0; i < dots.length; i++) {
     dots[i].className = dots[i].className.replace(" active", "");
   }
+
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
   captionText.innerHTML = dots[slideIndex-1].alt;
 
-  // Lazy loading and limiting resolution
-  let images = slides[slideIndex-1].getElementsByTagName("img");
-  for (i = 0; i < images.length; i++) {
-    images[i].loading = "lazy"; // Add lazy loading
-    // Limit resolution to less than 1080px width
-    if (images[i].width > 1080) {
-      images[i].width = 1080;
-      images[i].height = (1080 / images[i].naturalWidth) * images[i].naturalHeight;
-    }
-  }
+  // Triggering reflow to apply the fade transition
+  slides[slideIndex-1].offsetHeight;
+
+  slides[slideIndex-1].style.opacity = 1; // Set opacity to 1 for the current slide
 }
+
