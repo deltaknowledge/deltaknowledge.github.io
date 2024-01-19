@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4331083854652955"
      crossorigin="anonymous"></script>
@@ -7,39 +7,90 @@
     <title>Cheng-You Ho</title>
     <link rel="stylesheet" type="text/css" href="global.css">
     <link rel="stylesheet" type="text/css" href="resources.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha384-ez8JvJwWu1CLO2V5gZJef8uU1T6c9F/Z9bPTbMl7OwPPWJByJFv8i5oT5Qv9W2Sw" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha384-ez8JvJwWu1CLO2V5gZJef8uU1T6c9F/Z9bPTbMl7OwPPWJByJFv8i5oT5Qv9W2Sw" crossorigin="anonymous"> -->
 </head>
 <body>
-    <nav class="navbar">
-        <h1>CYH</h1>
-        <ul class="nav-list">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="resources.html">Resources</a></li>
-            <li><a href="projects.html">Projects</a></li>
-        </ul>
-    </nav>
+    <div id="app">
+        <nav class="navbar">
+            <h1>CYH</h1>
+            <ul class="nav-list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="projects.html">Projects</a></li>
+            </ul>
+        </nav>
 
-    <h1>Resources</h1>
-    <p>Here's a display of my academic-related resources! These include study group meterials, problem-and-solution documents, unpublished research and more.
-        Some of them aren't serious at all - I just like to write LaTeX for fun sometimes!
-    </p>
+        <h1>Resources</h1>
+        <p>{{ resourceDescription }}</p>
 
-    <table class="markdown-table" id="resourceTable">
-        <thead>
-            <tr>
-                <th>Title</th>
-                <th>Description</th>
-                <th>Date</th>
-                <th>Size</th>
-            </tr>
-        </thead>
-        <tbody>
+        <!-- Render tables for each group -->
+        <div v-for="group in groupedFiles" :key="group.group">
+            <h2>{{ group.title }}</h2>
+            <table class="markdown-table" id="resourceTable">
+                <thead>
+                    <tr>
+                        <th>Title</th>
+                        <th>Description</th>
+                        <th>Date</th>
+                        <th>Size</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr v-for="file in group.files" :key="file[0]">
+                        <td><a :href="'resources/' + file[1].href" target="_blank" v-html="file[1].title"></a></td>
+                        <td v-html="file[1].description"></td>
+                        <td>{{ file[1].date }}</td>
+                        <td>{{ file[1].size }} kb</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
 
-        </tbody>
-    </table>
-
-
-
+    <script src="https://unpkg.com/vue@3"></script>
     <script src="resources.js"></script>
+    <script>
+        const app = Vue.createApp({
+            data() {
+                return {
+                    resourceDescription: "Here's a display of paperwork created by me! These include study group materials, Q&A documents, unpublished research and more. Some of them aren't serious at all - I just like to write LaTeX for fun sometimes!",
+                    groupedFiles: this.groupFilesByGroup(),
+                };
+            },
+            methods: {
+                groupFilesByGroup() {
+                    const groupedFiles = {};
+
+                    for (const [key, file] of Object.entries(filesDictionary)) {
+                        const groupNumber = file.group || 0;
+
+                        if (!groupedFiles[groupNumber]) {
+                            groupedFiles[groupNumber] = {
+                                group: groupNumber,
+                                title: this.getGroupTitle(groupNumber),
+                                files: [],
+                            };
+                        }
+
+                        groupedFiles[groupNumber].files.push([key, file]);
+                    }
+
+                    return Object.values(groupedFiles);
+                },
+                getGroupTitle(groupNumber) {
+                    const titles = {
+                        0: "Physics Olympiad",
+                        1: "Research / Experiments",
+                        2: "Study Group / YouTube Materials",
+                        3: "Miscellaneous",
+                    };
+
+                    return titles[groupNumber] || "Unknown";
+                },
+            },
+        });
+
+        app.mount("#app");
+    </script>
 </body>
 </html>
