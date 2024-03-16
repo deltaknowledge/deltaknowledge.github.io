@@ -152,17 +152,67 @@ const filesDictionary = {
     group: 40
   },"PhySG20240105": {
     title: 'PhySG 2024/01/05',
-    description: 'Problem set for 2024/01/05 Physics Study Group.',
+    description: 'Problem set for 2024/01/05 Physics Study Group on the Vis-Viva equation and the Tsiolkovsky rocket equation.',
     href: 'physg20240105.pdf',
     size: 793,
-    date: '2024/1',
+    date: '2024/01',
     group: 30
   },"PhySG20231201": {
     title: 'PhySG 2023/12/01',
-    description: 'Problem set for 2023/12/01 Physics Study Group.',
+    description: 'Problem set for 2023/12/01 Physics Study Group on polar coordinates.',
     href: 'physg20231201v3.pdf',
     size: 663,
-    date: '2023/12/01',
+    date: '2023/12',
+    group: 30
+  },"RRLyraeReportTISF": {
+    title: 'TISF 2023 Research Paper',
+    description: 'My research report regarding RR Lyrae stars which I participated in the 2023 Taiwan International Science Fair with. This project got third prize and I received a chance to participate in the MOSTRATEC fair in Brazil!',
+    href: '星團科展最終版二修.pdf',
+    size: 4707,
+    date: '2023/11',
+    group: 20
+  },"RRLyraePosterTISF": {
+    title: 'TISF 2023 Poster',
+    description: 'My poster at the 2023 TISF.',
+    href: 'TISFposter.pdf',
+    size: 2540,
+    date: '2024/02',
+    group: 20
+  },"RRLyraeDiaryTISF": {
+    title: 'TISF 2023 Poster',
+    description: 'Research diary for my TISF 2023 project.',
+    href: 'TISF日誌.pdf',
+    size: 4423,
+    date: '2024/02',
+    group: 20
+  },
+  "PhysicsCupProblem2": {
+    title: 'Physics Cup Problem 2',
+    description: 'Submission to 2023 Physics Cup Problem 2. This is my second solution and is judged correct. My first solution, which is rejected, is appended at the end of this file.',
+    href: '2023pc_2_2024_01_07_cyh.pdf',
+    size: 1499,
+    date: '2024/01',
+    group: 40
+  },"vectorAnalysisTeach": {
+    title: '基礎向量分析 Basic Vector Analysis',
+    description: 'Handout on preliminary vector analysis in preparation for electromagnetics (2024/02/20) Physics Study Group).',
+    href: 'TISF日誌.pdf',
+    size: 564,
+    date: '2024/02',
+    group: 30
+  },"PhySG20231115": {
+    title: 'PhySG 2023/11/15',
+    description: 'Problem set for 2023/11/15 Physics Study Group on 2D motion and polar coordinates.',
+    href: '20231115physicssg.pdf',
+    size: 857,
+    date: '2023/11',
+    group: 30
+  },"PhySG20240220HW": {
+    title: '基礎向量分析作業 Basic Vector Analysis HW',
+    description: 'Homework (with solution) for 2024/02/20 Physics Study Group on vector analysis.',
+    href: 'vectorAnalysisHWwithsol.pdf',
+    size: 250,
+    date: '2024/02',
     group: 30
   }
 };
