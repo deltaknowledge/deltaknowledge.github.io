@@ -5,7 +5,7 @@ const filesDictionary = {
     href: 'Drifting_Gas_System.pdf',
     size: 109,
     date: '2023/10',
-    group: 0
+    group: 10
   },
   "TYPTFourierAnalysis": {
     title: 'TYPT 講義：傅立葉分析<br>TYPT Handout: Fourier Transform',
@@ -13,7 +13,7 @@ const filesDictionary = {
     href: '物辯講義_傅立葉分析.pdf',
     size: 564,
     date: '2023/09',
-    group: 2
+    group: 30
   },
   "FocusOfParabola": {
     title: 'Focus of a Parabola',
@@ -21,7 +21,7 @@ const filesDictionary = {
     href: 'Focus_of_a_Parabola.pdf',
     size: 214,
     date: '2023/03',
-    group: 0
+    group: 10
   },
   "AverageOfSineSquared": {
     title: 'Average of Sine Squared',
@@ -29,7 +29,7 @@ const filesDictionary = {
     href: 'Average_of_sine_squared.pdf',
     size: 85,
     date: '2022/06',
-    group: 0
+    group: 10
   },
   "EntropyChangeThermalEqulibrium": {
     title: 'Entropy Change of Thermal Equlibrium',
@@ -37,7 +37,7 @@ const filesDictionary = {
     href: 'Entropy_Change_of_Thermal_Equlibrium.pdf',
     size: 108,
     date: '2023/06',
-    group: 0
+    group: 10
   },
   "FundamentalsODE": {
     title: 'Fundamentals of solving ODE',
@@ -45,7 +45,7 @@ const filesDictionary = {
     href: 'Fundamentals_of_ODE.pdf',
     size: 214,
     date: '2022/07',
-    group: 0
+    group: 10
   },
   "InternalKineticEnergyProblem": {
     title: 'Internal Kinetic Energy Problem from the 2023 Taiwan Physics Olympiad 1st Round Qualifiers',
@@ -53,7 +53,7 @@ const filesDictionary = {
     href: 'Internal_Kinetic_Energy_2023_TPhO_1st_Round.pdf',
     size: 331,
     date: '2023/07',
-    group: 0
+    group: 10
   },
   "MisconceptionPressureTermBernoulli": {
     title: 'Misconception Regarding the Pressure Term in Bernoulli\'s Equation',
@@ -61,7 +61,7 @@ const filesDictionary = {
     href: 'Misconception__Bernoulli_Equation_Pressure.pdf',
     size: 204,
     date: '2023/07',
-    group: 0
+    group: 10
   },
   "MisconceptionDirectionSurfaceTension": {
     title: 'Misconception Regarding Direction of Macroscopic Surface Tension',
@@ -69,7 +69,7 @@ const filesDictionary = {
     href: 'Misconception__Direction_of_surface_tension.pdf',
     size: 184,
     date: '2023/07',
-    group: 0
+    group: 10
   },
   "IntuitiveUnderstandingMechanicalPendulum": {
     title: 'Intuitive Understanding of the Behavior of the Mechanical Pendulum Beyond the Small-Angle Approximation',
@@ -77,7 +77,7 @@ const filesDictionary = {
     href: 'Numerical_Pendulum.pdf',
     size: 1547,
     date: '2023/11',
-    group: 1
+    group: 20
   },
   "PhysicsCupProblem1": {
     title: 'Physics Cup Problem 1',
@@ -85,7 +85,7 @@ const filesDictionary = {
     href: 'Physics_Cup_Problem_1.pdf',
     size: 923,
     date: '2023/10',
-    group: 3
+    group: 40
   },
   "SuborbitalProjectileMotion": {
     title: 'Suborbital Projectile Motion',
@@ -93,7 +93,7 @@ const filesDictionary = {
     href: 'Suborbital_Projectile_Problem.pdf',
     size: 107,
     date: '2023/05',
-    group: 0
+    group: 10
   },
   "FunProblemsRotations": {
     title: '有趣的轉動題目<br>Fun Problems in Rotations',
@@ -101,7 +101,7 @@ const filesDictionary = {
     href: '有趣的轉動題目.pdf',
     size: 544,
     date: '2023/08',
-    group: 2
+    group: 30
   },
   "PhysicsFilesWritingSummary": {
     title: '物理文檔撰寫成果<br>Physics Files Writing Summary',
@@ -109,7 +109,7 @@ const filesDictionary = {
     href: '物理文檔集錦.pdf',
     size: 258,
     date: '2023/08',
-    group: 0
+    group: 10
   },
   "MathPreliminariesHighSchoolPhysicsCompetitions": {
     title: 'Math Preliminaries for High School Physics Competitions',
@@ -117,7 +117,7 @@ const filesDictionary = {
     href: '物辯講義_Math_Preliminaries.pdf',
     size: 100,
     date: '2023/09',
-    group: 2
+    group: 30
   },
   "TYPTOscillations": {
     title: 'TYPT 講義：震盪<br>TYPT Handout: Oscillations',
@@ -125,7 +125,7 @@ const filesDictionary = {
     href: '物辯講義_震盪.pdf',
     size: 639,
     date: '2023/10',
-    group: 2
+    group: 30
   },
   "Matrices": {
     title: '矩陣<br>Matrices',
@@ -133,7 +133,7 @@ const filesDictionary = {
     href: '矩陣.pdf',
     size: 339,
     date: '2022/06',
-    group: 0
+    group: 10
   },
   "DiffractionReport": {
     title: '干涉與繞射 實驗報告<br>Lab Report: Interference and Diffraction',
@@ -141,7 +141,7 @@ const filesDictionary = {
     href: 'diffractionExperimentReport.pdf',
     size: 762,
     date: '2023/11',
-    group: 1
+    group: 20
   },
   "ElsaDuet": {
     title: 'Elsa Duet',
@@ -149,7 +149,21 @@ const filesDictionary = {
     href: 'elsaduet.pdf',
     size: 104,
     date: '2023/12',
-    group: 3
+    group: 40
+  },"PhySG20240105": {
+    title: 'PhySG 2024/01/05',
+    description: 'Problem set for 2024/01/05 Physics Study Group.',
+    href: 'physg20240105.pdf',
+    size: 793,
+    date: '2024/1',
+    group: 30
+  },"PhySG20231201": {
+    title: 'PhySG 2023/12/01',
+    description: 'Problem set for 2023/12/01 Physics Study Group.',
+    href: 'physg20231201v3.pdf',
+    size: 663,
+    date: '2023/12/01',
+    group: 30
   }
 };
 
