@@ -165,22 +165,22 @@ const filesDictionary = {
     date: '2023/12',
     group: 30
   },"RRLyraeReportTISF": {
-    title: 'TISF 2023 Research Paper',
-    description: 'My research report regarding RR Lyrae stars which I participated in the 2023 Taiwan International Science Fair with. This project got third prize and I received a chance to participate in the MOSTRATEC fair in Brazil!',
+    title: 'TISF 2024 Research Paper',
+    description: 'My research report regarding RR Lyrae stars which I participated in the 2024 Taiwan International Science Fair with. This project got third prize and I received a chance to participate in the MOSTRATEC fair in Brazil!',
     href: '星團科展最終版二修.pdf',
     size: 4707,
     date: '2023/11',
     group: 20
   },"RRLyraePosterTISF": {
-    title: 'TISF 2023 Poster',
-    description: 'My poster at the 2023 TISF.',
+    title: 'TISF 2024 Poster',
+    description: 'My poster at the 2024 TISF.',
     href: 'TISFposter.pdf',
     size: 2540,
     date: '2024/02',
     group: 20
   },"RRLyraeDiaryTISF": {
-    title: 'TISF 2023 Poster',
-    description: 'Research diary for my TISF 2023 project.',
+    title: 'TISF 2024 Research Diary',
+    description: 'Research diary for my TISF 2024 project.',
     href: 'TISF日誌.pdf',
     size: 4423,
     date: '2024/02',
