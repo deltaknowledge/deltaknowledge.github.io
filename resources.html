@@ -75,8 +75,18 @@
                         groupedFiles[groupNumber].files.push([key, file]);
                     }
 
+                    // Sort files in each group by date, from late to early
+                    for (const group of Object.values(groupedFiles)) {
+                        group.files.sort((a, b) => {
+                            const dateA = new Date(a[1].date);
+                            const dateB = new Date(b[1].date);
+                            return dateB - dateA;
+                        });
+                    }
+
                     return Object.values(groupedFiles);
                 },
+
                 getGroupTitle(groupNumber) {
                     const titles = {
                         10: "Physics Olympiad",

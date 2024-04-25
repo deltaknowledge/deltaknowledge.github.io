@@ -185,6 +185,20 @@ const filesDictionary = {
     size: 4423,
     date: '2024/02',
     group: 20
+  },"StrawReport": {
+    title: '2024 City Science Fair Report',
+    description: 'My report at the 2024 Chiayi Science Fair regarding an interesting 2024 IYPT problem: Pumping Straw.',
+    href: '吸管科展.pdf',
+    size: 1891,
+    date: '2024/04',
+    group: 20
+  },"StrawPoster": {
+    title: '2024 City Science Fair Poster',
+    description: 'My poster at the 2024 Chiayi Science Fair.',
+    href: '吸管科展海報.pdf',
+    size: 2439,
+    date: '2024/04',
+    group: 20
   },
   "PhysicsCupProblem2": {
     title: 'Physics Cup Problem 2',
@@ -214,6 +228,13 @@ const filesDictionary = {
     size: 250,
     date: '2024/02',
     group: 30
+  },"AboutMe": {
+    title: 'About Me',
+    description: 'A neat PDF about myself.',
+    href: 'About Cheng-You.pdf',
+    size: 792, 
+    date: '2024/02',
+    group: 40
   }
 };
 
